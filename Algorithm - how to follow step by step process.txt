@@ -1,0 +1,7 @@
+Algorithm:
+
+-> First i will use the method of the readdir to read the directory, if the directory>0 then it will show some output in e.g. HTML form.
+
+-> Second i will use the method of the readFile to read the file, i will get the filename through Params and will get the inner content through ("fileData") parameter of the fs.readFile method and then i will send these both objects to the frontend to render them.
+
+-> Third i will use fs.writeFile to write the file (we can't get the data if we dont use 'name' attribute in the inout tag) so we will get the frontend data to the backend through 'req.body.title' to get the title and 'req.body.details' to get the description 
